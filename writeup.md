@@ -38,7 +38,7 @@ The code for this step is contained in the third code cell of the IPython notebo
 Here is an exploratory visualization of the data set, where a random image of the training set is plotted.
 It also notes the ID and sign name for the image.
 
-<img src="./examples/my_visualization.jpg" style="height: 30px;"/>
+<img src="./examples/my_visualization.jpg" height="150" />
 
 ###Design and Test a Model Architecture
 
@@ -50,7 +50,7 @@ My pre-processing techniques included 4 steps. First, I converted the images to 
 
 Second, the images were normalized using min max normalization within a range of 0 to 1. This helps with images that have poor contrast and brings all input values into a set range. See the effects below:
 
-<img src="./examples/preprocessing.jpg" style="height: 30px;"/>
+<img src="./examples/preprocessing.jpg" height="150" />
 
 Third, additional augemented images were added to the training set, representing random translations, rotations, zoom, brightness, and contrast.
 
@@ -127,8 +127,8 @@ A well known architecture, LeNet, was chosen. I believed this to be relevant to 
 
 Here are five German traffic signs that I found on the web:
 
-<img src="./examples/preprocessing.jpg" style="height: 20px;"/> <img src="./new-traffic-sign-images/14.jpg" style="height: 20px;"/> <img src="./new-traffic-sign-images/1.jpg" style="height: 20px;"/>
-<img src="./new-traffic-sign-images/13.jpg" style="height: 20px;"/> <img src="./new-traffic-sign-images/11.jpg" style="height: 20px;"/>
+<img src="./examples/preprocessing.jpg" height="80" /> <img src="./new-traffic-sign-images/14.jpg" height="80" /> <img src="./new-traffic-sign-images/1.jpg" height="80" />
+<img src="./new-traffic-sign-images/13.jpg" height="80" /> <img src="./new-traffic-sign-images/11.jpg" height="80" />
 
 The first three images would be difficult to classify due to their noisy backgrounds, especially the third one since the background to sign ratio is equal. The last two look to be relativly straight forward, being the background are simple and lighting is good.
 
