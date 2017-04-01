@@ -1,4 +1,4 @@
-## Writeup: Build a Traffic Sign Recognition Project**
+## Writeup: Build a Traffic Sign Recognition Project
 
 
 The goals / steps of this project are the following:
@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/my_visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
+[image2]: ./examples/preprocessing.jpg "Pre-processing"
 [image3]: ./examples/preprocessing.jpg "Pre-processing"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
