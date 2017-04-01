@@ -9,17 +9,6 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/my_visualization.jpg "Visualization"
-[image2]: ./examples/preprocessing.jpg "Pre-processing"
-[image3]: ./new-traffic-sign-images/25.jpg "Traffic Sign 1"
-[image4]: ./new-traffic-sign-images/14.jpg "Traffic Sign 2"
-[image5]: ./new-traffic-sign-images/1.jpg "Traffic Sign 3"
-[image6]: ./new-traffic-sign-images/13.jpg "Traffic Sign 4"
-[image7]: ./new-traffic-sign-images/11.jpg "Traffic Sign 5"
-
 ---
 ###Writeup / README
 
@@ -49,7 +38,7 @@ The code for this step is contained in the third code cell of the IPython notebo
 Here is an exploratory visualization of the data set, where a random image of the training set is plotted.
 It also notes the ID and sign name for the image.
 
-![alt text][image1]
+<img src="./examples/my_visualization.jpg" style="height: 100px;"/>
 
 ###Design and Test a Model Architecture
 
@@ -61,7 +50,7 @@ My pre-processing techniques included 4 steps. First, I converted the images to 
 
 Second, the images were normalized using min max normalization within a range of 0 to 1. This helps with images that have poor contrast and brings all input values into a set range. See the effects below:
 
-![alt text][image2]
+<img src="./examples/preprocessing.jpg" style="height: 100px;"/>
 
 Third, additional augemented images were added to the training set, representing random translations, rotations, zoom, brightness, and contrast.
 
@@ -138,8 +127,8 @@ A well known architecture, LeNet, was chosen. I believed this to be relevant to 
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image3]=250x250![alt text][image4]![alt text][image5]
-![alt text][image6]![alt text][image7]
+<img src="./examples/preprocessing.jpg" style="height: 100px;"/> <img src="./new-traffic-sign-images/14.jpg" style="height: 100px;"/> <img src="./new-traffic-sign-images/1.jpg" style="height: 100px;"/>
+<img src="./new-traffic-sign-images/13.jpg" style="height: 100px;"/> <img src="./new-traffic-sign-images/11.jpg" style="height: 100px;"/>
 
 The first three images would be difficult to classify due to their noisy backgrounds, especially the third one since the background to sign ratio is equal. The last two look to be relativly straight forward, being the background are simple and lighting is good.
 
