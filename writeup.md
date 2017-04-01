@@ -85,7 +85,7 @@ My final model consisted of the following layers, following the LeNet architecut
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x1 Grayscale image   					| 
+| Input         		| 32x32x1 grayscale image   					| 
 | Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x6 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6					|
@@ -138,7 +138,7 @@ A well known architecture, LeNet, was chosen. I believed this to be relevant to 
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image3]![alt text][image4]![alt text][image5]
+![alt text][image3]{: height="100px"}![alt text][image4]![alt text][image5]
 ![alt text][image6]![alt text][image7]
 
 The first three images would be difficult to classify due to their noisy backgrounds, especially the third one since the background to sign ratio is equal. The last two look to be relativly straight forward, being the background are simple and lighting is good.
