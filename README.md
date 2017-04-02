@@ -18,6 +18,7 @@ Overview of key files:
 * [iPython Notebook](https://github.com/cassiecarr/CarND-TrafficSignClassifier-P2-1/blob/master/Traffic_Sign_Classifier.ipynb) contains the code cells and outputs for the model
 * [Report](https://github.com/cassiecarr/CarND-TrafficSignClassifier-P2-1/blob/master/report.html) html file showing code cells and output of iPython Notebook 
 * [Writeup](https://github.com/cassiecarr/CarND-TrafficSignClassifier-P2-1/blob/master/writeup.md) writeup of the project
+* [New German Traffic Sign Images](https://github.com/cassiecarr/CarND-TrafficSignClassifier-P2-1/tree/master/new-traffic-sign-images) 
 
 ### Dependencies
 
