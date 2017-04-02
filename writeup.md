@@ -1,8 +1,8 @@
-## Writeup: Build a Traffic Sign Recognition Project
+# Writeup: Build a Traffic Sign Recognition Project
 
 
 The goals / steps of this project are the following:
-* Load the data set (see below for links to the project data set)
+* Load the data set
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
@@ -10,15 +10,15 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 ---
-###Writeup / README
+## Writeup / README
 
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
+#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
 You're reading it! and here is a link to my [project code](https://github.com/cassiecarr/CarND-TrafficSignClassifier-P2-1/blob/master/Traffic_Sign_Classifier.ipynb)
 
-###Data Set Summary & Exploration
+### Data Set Summary & Exploration
 
-####1. Provide a basic summary of the data set and identify where in your code the summary was done. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+#### 1. Provide a basic summary of the data set and identify where in your code the summary was done. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 The code for this step is contained in the second code cell of the IPython notebook.  
 
@@ -151,44 +151,44 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 The code for making predictions on my final model, including softmax probabilities, is located in the 16th cell of the Ipython notebook. The list below shows the top 5 softmax probabilities for each traffic sign image:
 
 Image  1
-True Value: 13, Yield
-Probability 1(100%): 13, Yield
-Probability 2(0%): 3, Speed limit (60km/h)
-Probability 3(0%): 12, Priority road
-Probability 4(0%): 9, No passing
-Probability 5(0%): 0, Speed limit (20km/h)
+	True Value: 13, Yield
+	Probability 1(100%): 13, Yield
+	Probability 2(0%): 3, Speed limit (60km/h)
+	Probability 3(0%): 12, Priority road
+	Probability 4(0%): 9, No passing
+	Probability 5(0%): 0, Speed limit (20km/h)
  
 Image  2
-True Value: 14, Stop
-Probability 1(64%): 14, Stop
-Probability 2(32%): 34, Turn left ahead
-Probability 3(3%): 13, Yield
-Probability 4(0%): 3, Speed limit (60km/h)
-Probability 5(0%): 12, Priority road
+	True Value: 14, Stop
+	Probability 1(64%): 14, Stop
+	Probability 2(32%): 34, Turn left ahead
+	Probability 3(3%): 13, Yield
+	Probability 4(0%): 3, Speed limit (60km/h)
+	Probability 5(0%): 12, Priority road
  
 Image  3
-True Value: 25, Road work
-Probability 1(100%): 25, Road work
-Probability 2(0%): 23, Slippery road
-Probability 3(0%): 24, Road narrows on the right
-Probability 4(0%): 29, Bicycles crossing
-Probability 5(0%): 20, Dangerous curve to the right
+	True Value: 25, Road work
+	Probability 1(100%): 25, Road work
+	Probability 2(0%): 23, Slippery road
+	Probability 3(0%): 24, Road narrows on the right
+	Probability 4(0%): 29, Bicycles crossing
+	Probability 5(0%): 20, Dangerous curve to the right
  
 Image  4
-True Value: 1, Speed limit (30km/h)
-Probability 1(67%): 29, Bicycles crossing
-Probability 2(27%): 23, Slippery road
-Probability 3(2%): 20, Dangerous curve to the right
-Probability 4(2%): 31, Wild animals crossing
-Probability 5(0%): 28, Children crossing
+	True Value: 1, Speed limit (30km/h)
+	Probability 1(67%): 29, Bicycles crossing
+	Probability 2(27%): 23, Slippery road
+	Probability 3(2%): 20, Dangerous curve to the right
+	Probability 4(2%): 31, Wild animals crossing
+	Probability 5(0%): 28, Children crossing
  
 Image  5
-True Value: 11, Right-of-way at the next intersection
-Probability 1(99%): 11, Right-of-way at the next intersection
-Probability 2(0%): 30, Beware of ice/snow
-Probability 3(0%): 31, Wild animals crossing
-Probability 4(0%): 21, Double curve
-Probability 5(0%): 23, Slippery road
+	True Value: 11, Right-of-way at the next intersection
+	Probability 1(99%): 11, Right-of-way at the next intersection
+	Probability 2(0%): 30, Beware of ice/snow
+	Probability 3(0%): 31, Wild animals crossing
+	Probability 4(0%): 21, Double curve
+	Probability 5(0%): 23, Slippery road
 
 Three of the five images 99-100% confident with the correct value (yield, road work, and right-of-way). The stop sign, while correct, only had a probability of 64%. And the speed limit sign, which was incorrect, had a probability of 67% for bicycles crossing, the correct sign type was not even listed in the top 5. I believe the background noise of the speed limit sign caused it to be difficult to classify.
 
