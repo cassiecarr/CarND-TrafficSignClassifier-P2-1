@@ -7,7 +7,7 @@ This project uses deep neural networks and convolutional neural networks to clas
 
 The project features:
 * Exporatory display of the input data
-* Design, training and testing of the model architecture (based on LeNet architecture)
+* Design, training and testing of the model architecture using TensorFlow
 * Use of the model to make predictions on new images
 * Analyzing the softmax probabilities of the new images
 
@@ -20,10 +20,8 @@ Overview of key files:
 * [Writeup](https://github.com/cassiecarr/CarND-TrafficSignClassifier-P2-1/blob/master/writeup.md) writeup of the project
 
 ### Dependencies
-This lab requires:
 
 * [Dataset for German Traffic Signs](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5898cd6f_traffic-signs-data/traffic-signs-data.zip)
 * [CarND Term1 Starter Kit](https://github.com/udacity/CarND-Term1-Starter-Kit)
 
-The lab enviroment can be created with CarND Term1 Starter Kit. Click [here](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) for the details.
 
