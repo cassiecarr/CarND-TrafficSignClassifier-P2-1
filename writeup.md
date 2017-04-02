@@ -22,8 +22,7 @@ You're reading it! and here is a link to my [project code](https://github.com/ca
 
 The code for this step is contained in the second code cell of the IPython notebook.  
 
-I used the numby library to calculate summary statistics of the traffic
-signs data set:
+I used the numby library to calculate summary statistics of the traffic signs data set:
 
 * Number of training examples
 * Number of validation examples
@@ -38,7 +37,7 @@ The code for this step is contained in the third code cell of the IPython notebo
 Here is an exploratory visualization of the data set, where a random image of the training set is plotted.
 It also notes the ID and sign name for the image.
 
-<img src="./examples/my_visualization.jpg" height="150" />
+<img src="./examples/my_visualization.jpg" height="70" />
 
 ###Design and Test a Model Architecture
 
@@ -50,7 +49,7 @@ My pre-processing techniques included 4 steps. First, I converted the images to 
 
 Second, the images were normalized using min max normalization within a range of 0 to 1. This helps with images that have poor contrast and brings all input values into a set range. See the effects below:
 
-<img src="./examples/preprocessing.jpg" height="150" />
+<img src="./examples/preprocessing.jpg" height="180" />
 
 Third, additional augemented images were added to the training set, representing random translations, rotations, zoom, brightness, and contrast.
 
@@ -127,7 +126,7 @@ A well known architecture, LeNet, was chosen. I believed this to be relevant to 
 
 Here are five German traffic signs that I found on the web:
 
-<img src="./examples/preprocessing.jpg" height="80" /> <img src="./new-traffic-sign-images/14.jpg" height="80" /> <img src="./new-traffic-sign-images/1.jpg" height="80" />
+<img src="./new-traffic-sign-images/25.jpg" height="80" /> <img src="./new-traffic-sign-images/14.jpg" height="80" /> <img src="./new-traffic-sign-images/1.jpg" height="80" />
 <img src="./new-traffic-sign-images/13.jpg" height="80" /> <img src="./new-traffic-sign-images/11.jpg" height="80" />
 
 The first three images would be difficult to classify due to their noisy backgrounds, especially the third one since the background to sign ratio is equal. The last two look to be relativly straight forward, being the background are simple and lighting is good.
@@ -138,30 +137,21 @@ The code for making predictions on my final model is located in the 13th cell of
 
 Here are the results of the prediction:
 
-| Image			        	|     Prediction	        					| 
-|:-------------------------:|:---------------------------------------------:| 
-| Road Work      			| Road Work   									| 
-| Stop      				| Stop  										|
-| Speed limit (30km/h)		| Slippery road									|
-| 100 km/h	      			| Bumpy Road					 				|
-| Right-of-way  			| Right-of-way at the next intersection     	|
-  at the next intersection
+| Image			        				|     Prediction	        					| 
+|:-------------------------------------:|:---------------------------------------------:| 
+| Road Work      						| Road Work   									| 
+| Stop      							| Stop  										|
+| Speed limit (30km/h)					| Slippery road									|
+| 100 km/h	      						| Bumpy Road					 				|
+| Right-of-way at the next intersection	| Right-of-way at the next intersection     	|
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 94%. The one image that did not give a successful prediction was the speed limit sign, which is most likely due to the fact there is lots of background noise compared to the amount of space in the image taken up by the sign. 
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model, including softmax probabilities, is located in the 14th cell of the Ipython notebook.
+The code for making predictions on my final model, including softmax probabilities, is located in the 14th cell of the Ipython notebook. The image below shows the top 5 softmax probabilities for each traffic sign 
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+<img src="./examples/softmax.jpg" width="300" /> 
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+Four of the five images were 100% confident with the correct value. The one image that was not correct, Speed limit (30km/h), had a confidence of 98% for Slippery Road. 
 
-
-For the second image ... 
