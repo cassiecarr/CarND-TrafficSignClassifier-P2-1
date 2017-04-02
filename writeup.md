@@ -190,5 +190,5 @@ The code for making predictions on my final model, including softmax probabiliti
 	* Probability 4(0%): 21, Double curve
 	* Probability 5(0%): 23, Slippery road
 
-Three of the five images 99-100% confident with the correct value (yield, road work, and right-of-way). The stop sign, while correct, only had a probability of 64%. And the speed limit sign, which was incorrect, had a probability of 67% for bicycles crossing, the correct sign type was not even listed in the top 5. I believe the background noise of the speed limit sign caused it to be difficult to classify.
+Three of the five images were 99-100% confident with the correct value (yield, road work, and right-of-way). The stop sign, while correct, only had a probability of 64%. And the speed limit sign, which was incorrect, had a probability of 67% for bicycles crossing, the correct sign type was not even listed in the top 5. I believe the background noise of the speed limit sign caused it to be difficult to classify.
 
